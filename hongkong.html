@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(hongk.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #d8a6a6;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 370px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1>HONG KONG</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about HONG KONG: </h1> <br>
+        <p>Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is a city and special administrative region of China on the eastern Pearl River Delta in South China.
+            <br>Hong Kong was established as a colony of the British Empire after the Qing Empire ceded Hong Kong Island from Xin'an County at the end of the First Opium War in 1841 then again in 1842. The colony expanded to the Kowloon Peninsula in 1860 after the Second Opium War and was further extended when Britain obtained a 99-year lease of the New Territories in 1898. British Hong Kong was occupied by Imperial Japan from 1941 to 1945 during World War II; British administration resumed after the surrender of Japan. The whole territory was transferred to China in 1997. As one of China's two special administrative regions (the other being Macau), Hong Kong maintains separate governing and economic systems from that of mainland China under the principle of "one country, two systems. Hong Kong has an energy about it that is hard to describe. Around every corner is something new and unique, whether it's an ancient temple, a shop selling the latest electronic gadget, or a man taking his bird in a cage for a walk. </P>
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = "FERRY.JPG">
+          </div>
+          <div class = content>
+            <h3>STAR FERRY</h3>
+            <p>Hong Kong's famous Star Ferry, with roots dating back to 1880, costs only a few Hong Kong Dollars to ride, making it one of the best deals in all of Hong Kong. Victoria Harbour is a hive of activity, and ships of all shapes and sizes chug, zip, or wallow past as the expert captains of the Star Ferries somehow avoid collisions.</p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = "SKYLINE.JPG">
+            </div>
+            <div class = content>
+              <h3>HK SKYLINE</h3>
+              <p>Hong Kong has one of the most impressive and recognizable skylines in the world. The dense collection of skyscrapers, both on the island of Hong Kong and in Kowloon, combined with the surrounding mountains and harbor set this city apart. </p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = "PEAK.JPG">
+            </div>
+            <div class = content>
+              <h3>VICTORIA PEAK</h3>
+              <p>You haven't seen the best of Hong Kong until you've taken in the skyline from Victoria Peak, more commonly known as The Peak. Ride the tram to the top of this scenic viewpoint to see the skyscrapers, bustling city, harbor, and surrounding islands.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about Hong KONG?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p> Hong Kong's terrain is hilly and mountainous with steep slopes. There are lowlands in the northern part of Hong Kong. A significant amount of land in Hong Kong, especially on the Hong Kong Island and the Kowloon peninsula, is reclaimed. Hong Kong is one of the most densely populated places in the world. Hong Kong is also a major global financial centre and one of the most developed cities in the world. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about hong kong <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. According to a survey conducted in Hong Kong in the end of 2022, around 36 percent of the surveyed residents in Hong Kong said they were happy in the past year. This indicated a significant increase in the level of happiness compared to the previous three years.
+
+        2.The funicular railway is known as the Peak Tram, and it began running in 1888 in Hong Kong. To date, it is one of the steepest and oldest tramways in the world.
+        
+        3.If there is one thing that is synonymous with Hong Kong, it has to be the famous Dim sum. In Cantonese, the pronunciation of “Dim Sum” also means to “touch the heart”
+   </div> </li>
+
+  <li><label for="third"> What language is spoken in here? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p>Hong Kong's recent census report states that Mandarin is the second language most spoken on the island following Cantonese. Cantonese remains dominant with 96% percent. As for Mandarin, 48% of Hong Kong's population can speak it, compared to 46% of population that can speak English.
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add it to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>It's the kind of place you can visit year in, year out and never get bored. One minute, you can be in the heart of the city with it's 7 million residents, and the next out and about within nature.Hong Kong is generally considered one of the most beautiful cities in the world for other reasons too. Along with the highly vertical skyline and the beauty of the forested peak, Victoria Harbour, the surrounding blue sea, and the blue sky with less pollution makes Hong Kong much more attractive and scenic.
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>

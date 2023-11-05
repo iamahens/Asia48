@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(northk.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #d8a6a6;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 370px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1> NORTH KOREA</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about NORTH KOREA: </h1> <br>
+        <p>North Korea, officially the Democratic People's Republic of Korea, is a country in East Asia. It constitutes the northern half of the Korean Peninsula and shares borders with China and Russia to the north at the Yalu and Tumen rivers, and South Korea to the south at the Korean Demilitarized Zone. 
+            <br>North Korea follows Songun, a "military first" policy which prioritizes the Korean People's Army in state affairs and the allocation of resources. It possesses nuclear weapons, and is the country with the second highest number of military and paramilitary personnel, with a total of 7.769 million active, reserve, and paramilitary personnel, or approximately 30% of its population. Its active duty army of 1.28 million soldiers is the fourth-largest in the world, consisting of 4.9% of its population. A 2014 inquiry by the United Nations into abuses of human rights in North Korea concluded that "the gravity, scale and nature of these violations reveal a state that does not have any parallel in the contemporary world," with Amnesty International and Human Rights Watch holding similar views. In addition to being a member of the United Nations since 1991, North Korea is also a member of the Non-Aligned Movement, G77, and the ASEAN Regional Forum. </P>
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = "NORTHK1.JPG">
+          </div>
+          <div class = content>
+            <h3>Pyongyang Metro</h3>
+            <p>At the top of our list of the best places to visit in North Korea is the metro system at the heart of Pyongyang. Opened to the Korean public in 1971, the Pyongyang Metro is the world’s deepest subway system to date.</p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = "NORTHK2.JPG">
+            </div>
+            <div class = content>
+              <h3> Mansudae Grand Monument</h3>
+              <p>Also known as Mansu Hill Grand Monument, this iconic complex situated in the capital city of Pyongyang continues to be a prominent landmark among foreigners and locals alike.
+
+                The 22-metre-tall statues of President Kim Il Sung and General Kim Jong are the centre of this tourist attraction.</p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = "NORTHK3.JPG">
+            </div>
+            <div class = content>
+              <h3>Triumphal Arch</h3>
+              <p>Standing tall at a height of 60 metres, the Arch of Triumph was opened in Pyongyang to mark the 70th birthday of North Korea’s first leader — President Kim Il-sung.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about NORTH KOREA?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p>North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia. It constitutes the northern half of the Korean Peninsula and shares borders with China and Russia to the north at the Yalu (Amnok) and Tumen rivers, and South Korea to the south at the Korean Demilitarized Zone. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about NORTH KOREA <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. North Koreans don’t follow the same timeline as Western countries. They like to do things their own way.North Korea started its calendar in 1912. Unsurprisingly, this was the year its founder and notorious dictator Kim Il Sung was born.
+
+        2. In North Korea, you can only visit 28 websites. Yep, only 28 websites! Given how the rest of the entire world is addicted to scrolling, this really is one of the most bizarre facts about North Korea.
+        
+        3. North Koreans hate losing. So instead of following well-established international laws and conventions, they often decide to make up their own rules. One example is basketball, and you might be surprised when we tell you that North Korea has its own rules for the sport.
+        
+        4. In North Korea, there are only 28 state-approved haircuts 
+   </div> </li>
+
+  <li><label for="third"> What language is spoken in here? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p>Korean is the official language of North Korea. Korean is similar to Mongolian and Manchurian and has a sentence structure similar to Japanese. North Korean dialects are different from the dialects spoken in the south. Dialects of Korean, some of which are not mutually intelligible, are spoken throughout North and South Korea country and generally coincide with provincial boundaries. The national dialects roughly coincide with the dialects of Pyongyang and Seoul.
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add it to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>North Korea is fascinating. Mysterious, improvershed and constantly news-worthy, this is one of the most curious countries you could ever visit
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>

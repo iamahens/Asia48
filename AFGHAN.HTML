@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(afganistan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #d8a6a6;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 320px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1>AFGHANISTAN</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about AFGHANISTAN: </h1> <br>
+        <p>Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central Asia and South Asia.Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central Asia and South Asia.
+            <br>Since the late 1970s, Afghanistan's history has been dominated by extensive warfare, including coups, invasions, insurgencies, and civil wars. The conflict began in 1978 when a communist revolution established a socialist state, and subsequent infighting prompted the Soviet Union to invade Afghanistan in 1979. Mujahideen fought against the Soviets in the Soviet–Afghan War and continued fighting amongst themselves following the Soviets' withdrawal in 1989. The Islamic fundamentalist Taliban controlled most of the country by 1996, but their Islamic Emirate of Afghanistan received little international recognition before its overthrow in the 2001 US invasion of Afghanistan. The Taliban returned to power in 2021 after capturing Kabul and overthrowing the government of the Islamic Republic of Afghanistan, thus bringing an end to the 2001–2021 war. Although initially claiming it would form an inclusive government for the country, in September 2021 the Taliban re-established the Islamic Emirate of Afghanistan with an interim government made up entirely of Taliban members. The Taliban government remains internationally unrecognized</p>
+       
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = "AF.JPG">
+          </div>
+          <div class = content>
+            <h3>Mazar-e Sharif</h3>
+            <p>The cobalt domes of the great Blue Mosque shoulder their way above the skyline of Mazar-e Sharif, glowing white-hot under the scorching Balkh sun.</p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = "AF1.JPG">
+            </div>
+            <div class = content>
+              <h3>Jalalabad</h3>
+              <p>Founded – like so many other cities in these parts – by the emperor Akbar, Jalalabad is a place where the passage of ancient time is virtually palpable.
+
+                You can often just about make out the snowy peaks of the Safid Mountain Range on the horizon, and imagine how the Mughal armies would have felt as they contemplated them way back in the 1500s. </p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = "AF2.JPG">
+            </div>
+            <div class = content>
+              <h3>BALKH</h3>
+              <p>Hailed as the epicenter of the Bactrian Empire of old, the aged town of Balkh has a history going back almost 4,000 years! In fact, it was here, high up in the gaps of the northern ridges of the Hindu Kush, that Zoroastrianism and Buddhism first flourished in these reaches.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about Afghanistan?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p> Afghanistan, officially the Islamic Republic of Afghanistan, is a mountainous, landlocked country in South-Central Asia at an important geopolitical location, it connects the Middle East with Central Asia and the Indian subcontinent. Afghanistan is known for making beautiful oriental rugs. The Afghan carpet has certain prints that make them unique to Afghanistan. Afghanistan is known for its production of Afghan rugs, traditionally handwoven using a number of well-known and highly-prized patterns. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about Afghanistan <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. New Year is known as Nauruz, and the people celebrate it on March 21st. It also lasts for two weeks, and people gather in the streets to celebrate this occasion.
+
+        2.Poetry is an important part of the culture in Herat, which is why Thursdays are dedicated to this art. People of all age groups come together to share ancient and modern verses of Afghan poetry. 
+        
+        3.Afghanistan has significant reserves of gold, natural gas, marble, coal, and other materials. However, the country doesn’t have sufficient resources to use these natural resources.
+        
+        4.You will find some of the oldest oil paintings in the world in the country. Bamyan is where the oldest oil paintings reside, and scientists found these paintings on the cave walls a long time ago.
+   </div> </li>
+
+  <li><label for="third"> What language is spoken in here? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p>There are between 40 and 59 languages spoken in Afghanistan. Dari and Pashto are the official and most widely spoken languages, by 77% and 48% of the population respectively. Dari, or Farsi, is the official name of the variety of Persian spoken in the country, and is widely used as a lingua franca.
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add it to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>Afghanistan is a gorgeous country. It housed many religions and been the heart of many empires. Hospitality flows in Afghans’ blood, and the food is a mouthwatering mix of Persian, Central Asian, and South Asian influences. It’s easy to see why one would want to travel there.
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>

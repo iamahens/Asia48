@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(japan.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #ddc3c3;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 370px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1>JAPAN</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about Japan: </h1> <br>
+        <p>Japan (Japanese: 日本, Nippon or Nihon,[nb 1] and formally 日本国, Nihonkoku)[nb 2] is an island country in East Asia. It is situated in the northwest Pacific Ocean and is bordered on the west by the Sea of Japan, extending from the Sea of Okhotsk in the north toward the East China Sea, Philippine Sea, and Taiwan in the south. Japan is a part of the Ring of Fire, and spans an archipelago of 14,125 islands, with the five main islands being Hokkaido, Honshu (the "mainland"), Shikoku, Kyushu, and Okinawa. Tokyo is the nation's capital and largest city, followed by Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.
+
+         <br> 
+            Japan is a developed country and a great power. It is a member of numerous international organizations, including the United Nations, G20, OECD, and the Group of Seven. Its economy is the world's third-largest by nominal GDP and the fourth-largest by PPP, with its per capita income ranking at 36th highest in the world
+            Japan is an enigma. It's the perfect juxtaposition of centuries-old traditions overlapped with lightning speed, cutting-edge technology. Many first-time visitors to Japan are often surprised to learn that, as one of the world's most advanced industrialized nations, this relatively small Asian country also boasts a rich and fascinating history that dates back thousands of years.
+
+Indeed, long before many of Europe's most spectacular cathedrals were built, Japan's Shinto and Buddhist temples were already well-established and drawing pilgrims and patrons to their elaborate designs and décor. At the same time, the country was already perfecting the skills and trades that would set it on the path to riches, from fine porcelains and ceramics to textiles such as silk.
+
+Much of this rich tradition has, despite wars and natural devastation, been preserved (or rebuilt), and a visit to Japan is a memorable adventure. Boasting an endless list of top attractions, fun things to do, and points of interest to explore, a vacation in Japan is certainly a great investment of time and money.
+        </p>
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = "mountfuji.jpg">
+          </div>
+          <div class = content>
+            <h3>MOUNT FUJI </h3>
+            <p>Without a doubt Japan's most recognizable landmark, majestic Mount Fuji (Fuji-san) is also the country's highest mountain peak. Towering 3,776 meters over an otherwise largely flat landscape to the south and east.  </p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = "TOKYO.JPG">
+            </div>
+            <div class = content>
+              <h3>IMPERIAL TOKYO</h3>
+              <p>Tokyo's most famous landmark, the Imperial Palace with its beautiful 17th-century parks surrounded by walls and moats, is a must-see when visiting the nation's capital.</p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = "NARA.JPG">
+            </div>
+            <div class = content>
+              <h3>HISTORIC NARA</h3>
+              <p>This spectacular two-story structure is borne on 18 columns, with two Nio statues standing eight meters tall, and it guards the temple entrance. Also of note here is the Hall of the Great Buddha, the world's largest timber building.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about JAPAN?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p> Japan is one of the oldest civilizations and has a beautiful and diverse history. The stunning, diverse scenery with mountains and breathtaking views, which are much appreciated by the Japanese, offers so many different experiences that attract tourists from all corners of the world. Japan is one of the largest and most developed economies in the world. It has a well-educated industrious workforce and its large, affluent population makes it one of the world’s biggest consumer markets. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about Japan.   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. Animated Japanese films and television shows (i.e.: Anime) account for 60% of the world’s animation-based entertainment. So successful is animation in Japan, that there are almost 130 voice-acting schools in the country.
+        2.In Japan there are more pets than children.
+        3. Around 24 billion pairs of chopsticks are used in Japan each year.
+        </p>
+   </div> </li>
+
+  <li><label for="third"> What language is spoken here? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p>  he most widely spoken language in Japan is Japanese, which is saperated into several dialects with Tokyo dialect considered standard Japanese. English is in common use in Japan with Chinese and Korean also becoming more common meaning that you can certainly get around without using Japanese.
+      </p>
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add it to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>Japan is a fascinating country with a long and rich history, filled with unique and interesting cultural customs. From its rich culinary culture to its breathtaking natural beauty, there is something for everyone to enjoy in Japan. With so much to see and do, it's no wonder why Japan is so well known around the world.
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>

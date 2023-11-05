@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(srilanka.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #d8a6a6;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 320px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1>SRI LANKA</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about SRI LANKA: </h1> <br>
+        <p>Sri Lanka, formerly known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.
+            <br>Sri Lanka has a population of around 22 million (2020) and is home to many cultures, languages, and ethnicities. The Sinhalese people form the majority of the nation's population, followed by the Tamils, who are the largest minority group and are concentrated in northern Sri Lanka; both the linguistic groups have played an influential role in the island's history. Other long established groups include the Moors, the Burghers, the Malays, the Chinese, and the indigenous Vedda. Sri Lanka is a developing country, ranking 73rd on the Human Development Index. It is the highest-ranked South Asian nation in terms of development and has the second-highest per capita income in South Asia; however, the ongoing economic crisis has resulted in the collapse of the currency, rising inflation, and a humanitarian crisis due to a severe shortage of essentials. It has also led to an eruption of street protests, with citizens successfully demanding that the president and the government step down.[22] The island has had a long history of engagement with modern international groups: it is a founding member of the SAARC and a member of the United Nations, the Commonwealth of Nations, the G77, and the Non-Aligned Movement.</p>
+       
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = "ELIYA.JPG">
+          </div>
+          <div class = content>
+            <h3>NUWARA ELIYA</h3>
+            <p>One of the most jaw-dropping experience you can ever have in Sri Lanka is the World’s End on the Horton Plains.</p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = "YALA.JPG">
+            </div>
+            <div class = content>
+              <h3>YALA PARK</h3>
+              <p>Spotting a leopard prowling in the Park of Yala is quite an ordinary spectacle. Witness the untamed world of nature in the Yala National Park and quench your eagerness to explore and learn more about wildlife</p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = "DHAKA.JPG">
+            </div>
+            <div class = content>
+              <h3>BENTOTA BEACH</h3>
+              <p>An extraordinary experience amidst an ordinary setup lies 65 kilometres from Colombo and is named Bentota beach. Soak yourself in the ordinary golden sand while enjoying the marvellous sound of the mighty Indian ocean.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about sri lanka?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p> Sri Lanka is well known for its rich Buddhist culture as well as other religions. Being a religious country, Sri Lanka has many places with religious and historic significance, which attract tourists from all over the world. Sri Lanka used to be called Ceylon which is the transliteration of Ceilao. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about Sri Lanka  <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. There’s more than a hundred waterfalls in Sri Lanka and plenty of them you can swim in! The majority of Sri Lanka’s electricity is supplied through hydropower plants that tap into the immense energy of these falls.
+       
+       2.  Sri Lanka was the first country in the world to democratically elect a woman as the head of government.
+    
+       3. Sri Lanka has a literacy rate of 92 per cent, which means they have the highest literacy rate in South Asia and one of the highest rates throughout Asia.
+
+       4. Sri Lanka was the first country in the world to democratically elect a woman as the head of government.
+        
+       5.Sri Lanka is the largest exporter of tea in the world, and grow black tea, green tea and white tea. You can sip your way around the entire country.
+        </p>
+   </div> </li>
+
+  <li><label for="third"> What language is spoken in here? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p> As per 2016, the Sinhala language is mostly spoken by the Sinhalese people, who constitute approximately 74.9% of the national population and total about 16.6 million. It uses the Sinhala abugida script, which is derived from the ancient Brahmi script.
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add it to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>sri Lanka is not only beautiful because of the amazing beaches or the rolling, perfect tea hills. It is nicknamed Pearl of the Indian Ocean and teardrop of India. Sri Lanka is known for these two lovely names. Pearl of the Indian Ocean is given to this small island nation probably due to its incredible natural beauty, extraordinary biodiversity as well as its precious gemstones.
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>

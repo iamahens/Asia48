@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    min-height: 100vh;
+    /* height: 1100px; */
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-x: hidden; */
+    justify-content: space-evenly;
+    font-family: 'Muli',sans-serif;
+    /* background-color:blueviolet;; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:fixed ;
+    background-image: url('Untitled\ design\ \(4\).png');
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+
+
+/* body::before {
+position:fixed;
+display:flex ;
+  content: "";
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, magenta, orange);
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 300px;
+  z-index: -1;
+} */
+
+/* body::after {
+  content: "";
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(45deg, blue, cyan);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  right: 250px;
+  z-index: -1;
+} */
+ 
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-top: 250px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  /* background-image: url('pexels-monstera-7412069.jpg'); */
+
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-size: 40px;
+    letter-spacing: 12;
+}
+
+.amount {
+    margin-bottom: 1.5rem;
+}
+
+.amount p {
+    font-size: 30px;
+    font-family: 'playfair';
+    font-weight: bolder;
+}
+
+.amount__input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 45px;
+    font-size: 17px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.actions p {
+    font-size: 25px;
+    font-family: 'playfair';
+    font-weight: bolder;
+}
+
+.select-box {
+    display: flex;
+    width: 171px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #999;
+    margin-right: 20px;
+   
+}
+
+.select-box  img {
+    max-width: 26px;
+    /* margin-top: 100px; */
+}
+
+.select-box select {
+    width: auto;
+    font-size: 22px;
+    font-family: 'playfair';
+    font-weight: 400;
+    background: none;
+    margin: 0 -5px 0 5px;
+    outline: none;
+    border: none;
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.exchange-rate {
+    font-size:25px;
+    font-family: 'playfair';
+    font-weight: 600;
+    margin: 20px 0 30px;
+}
+
+button {
+    position: relative;
+    height: 52px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    background: #4525f5;
+    transition: 0.3s ease;
+    transition: all .4s ease;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+.link{
+position:absolute ;
+  top:94%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color:transparent;
+width:250px;
+text-align:center;
+  color:black;
+  font-weight:999;
+  font-size:4vw;
+  height:30px ;
+  font-size:20px;
+  padding-top:5px;
+  border-radius:10px;
+  animation:anim 1.2s linear infinite ;
+}
+@keyframes anim{
+    0%{
+        border-top:3px solid black;
+    }
+    25%{
+        border-left:3px solid orange;
+    }
+    50%{
+        border-bottom:3px solid green
+    }
+    75%{
+        border-right:3px solid yellow;
+
+
+
+
+    }
+}
+
+/* ======NAVIGATION BAR=======   */
+header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease;
+    
+  }
+  
+  header.sticky{
+    height: calc(2.5rem + 1rem);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+   
+ 
+  
+   
+
+   
+   
+
+   a:hover::after{
+    width: 100%;
+
+   } */
+  
+  
+ 
+
+
+
+  nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    /* width: 100%; */
+    width: 2000px;
+    height: 70px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 35px;
+    line-height: 70px;
+    font-size: 30px;
+    background: #063247;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+ 
+
+
+ 
+	
+
+

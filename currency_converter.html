@@ -1,0 +1,306 @@
+<!-- Created by Saurav Sinha -->
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="currency_converter.css">
+    <title>Currency Converter - DAY9</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+        <label class="logo">CodingNepal</label>
+        <ul>
+           <li><a  href="homepage.html">Home</a></li>
+           <li><a href="homepage.html">About</a></li>
+           <li>
+            <a href="#" class="active">Discover
+            <i class="fas fa-caret-down"></i>
+            </a>
+            <ul>
+             <li><a href="index.html" style="font-size: 15px;">LANGUAGE-TRANSLATOR</li>
+             <li><a href="currency_converter.html" style="font-size: 15px;">CURRENCY-CONVERTER</a></li>
+             
+            </ul>
+           </li>
+           <li>
+            <a href="addon.html">Explore
+            </a>
+          
+           <li><a href="blog1.html">Blogs</a></li>
+        </ul>
+      </nav>
+        </header>
+  
+    <div class="container">
+        <h2 class="title">Currency Exchanger</h2>
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input type="text" name="amount__input" class="amount__input">
+        </div>
+        <div class="actions">
+            <div class="from">
+                <p>From</p>
+                <div class="select-box" id="country">
+                    <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                </div>
+            </div>
+            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+                <p>To</p>
+                <div class="select-box">
+                    <img src="https://flagcdn.com/48x36/gn.png" alt="flag">
+                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                </div>
+            </div>
+        </div>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+    </div>
+       </div>
+       
+    <!-- <a href="https://youtu.be/tPdD3lafq-c"><div class="link">MY CODING CHANNEL</div> -->
+    <script>
+    let country_list = {
+    "AED": "AE",
+    "AFN": "AF",
+    "XCD": "AG",
+    "ALL": "AL",
+    "AMD": "AM",
+    "ANG": "AN",
+    "AOA": "AO",
+    "AQD": "AQ",
+    "ARS": "AR",
+    "AUD": "AU",
+    "AZN": "AZ",
+    "BAM": "BA",
+    "BBD": "BB",
+    "BDT": "BD",
+    "XOF": "BE",
+    "BGN": "BG",
+    "BHD": "BH",
+    "BIF": "BI",
+    "BMD": "BM",
+    "BND": "BN",
+    "BOB": "BO",
+    "BRL": "BR",
+    "BSD": "BS",
+    "NOK": "BV",
+    "BWP": "BW",
+    "BYR": "BY",
+    "BZD": "BZ",
+    "CAD": "CA",
+    "CDF": "CD",
+    "XAF": "CF",
+    "CHF": "CH",
+    "CLP": "CL",
+    "CNY": "CN",
+    "COP": "CO",
+    "CRC": "CR",
+    "CUP": "CU",
+    "CVE": "CV",
+    "CYP": "CY",
+    "CZK": "CZ",
+    "DJF": "DJ",
+    "DKK": "DK",
+    "DOP": "DO",
+    "DZD": "DZ",
+    "ECS": "EC",
+    "EEK": "EE",
+    "EGP": "EG",
+    "ETB": "ET",
+    "EUR": "FR",
+    "FJD": "FJ",
+    "FKP": "FK",
+    "GBP": "GB",
+    "GEL": "GE",
+    "GGP": "GG",
+    "GHS": "GH",
+    "GIP": "GI",
+    "GMD": "GM",
+    "GNF": "GN",
+    "GTQ": "GT",
+    "GYD": "GY",
+    "HKD": "HK",
+    "HNL": "HN",
+    "HRK": "HR",
+    "HTG": "HT",
+    "HUF": "HU",
+    "IDR": "ID",
+    "ILS": "IL",
+    "INR": "IN",
+    "IQD": "IQ",
+    "IRR": "IR",
+    "ISK": "IS",
+    "JMD": "JM",
+    "JOD": "JO",
+    "JPY": "JP",
+    "KES": "KE",
+    "KGS": "KG",
+    "KHR": "KH",
+    "KMF": "KM",
+    "KPW": "KP",
+    "KRW": "KR",
+    "KWD": "KW",
+    "KYD": "KY",
+    "KZT": "KZ",
+    "LAK": "LA",
+    "LBP": "LB",
+    "LKR": "LK",
+    "LRD": "LR",
+    "LSL": "LS",
+    "LTL": "LT",
+    "LVL": "LV",
+    "LYD": "LY",
+    "MAD": "MA",
+    "MDL": "MD",
+    "MGA": "MG",
+    "MKD": "MK",
+    "MMK": "MM",
+    "MNT": "MN",
+    "MOP": "MO",
+    "MRO": "MR",
+    "MTL": "MT",
+    "MUR": "MU",
+    "MVR": "MV",
+    "MWK": "MW",
+    "MXN": "MX",
+    "MYR": "MY",
+    "MZN": "MZ",
+    "NAD": "NA",
+    "XPF": "NC",
+    "NGN": "NG",
+    "NIO": "NI",
+    "NPR": "NP",
+    "NZD": "NZ",
+    "OMR": "OM",
+    "PAB": "PA",
+    "PEN": "PE",
+    "PGK": "PG",
+    "PHP": "PH",
+    "PKR": "PK",
+    "PLN": "PL",
+    "PYG": "PY",
+    "QAR": "QA",
+    "RON": "RO",
+    "RSD": "RS",
+    "RUB": "RU",
+    "RWF": "RW",
+    "SAR": "SA",
+    "SBD": "SB",
+    "SCR": "SC",
+    "SDG": "SD",
+    "SEK": "SE",
+    "SGD": "SG",
+    "SKK": "SK",
+    "SLL": "SL",
+    "SOS": "SO",
+    "SRD": "SR",
+    "STD": "ST",
+    "SVC": "SV",
+    "SYP": "SY",
+    "SZL": "SZ",
+    "THB": "TH",
+    "TJS": "TJ",
+    "TMT": "TM",
+    "TND": "TN",
+    "TOP": "TO",
+    "TRY": "TR",
+    "TTD": "TT",
+    "TWD": "TW",
+    "TZS": "TZ",
+    "UAH": "UA",
+    "UGX": "UG",
+    "USD": "US",
+    "UYU": "UY",
+    "UZS": "UZ",
+    "VEF": "VE",
+    "VND": "VN",
+    "VUV": "VU",
+    "YER": "YE",
+    "ZAR": "ZA",
+    "ZMK": "ZM",
+    "ZWD": "ZW"
+}
+const dropList = document.querySelectorAll(".actions select"),
+    fromCurrency = document.querySelector(".from select"),
+    toCurrency = document.querySelector(".to select"),
+    getButton = document.querySelector("button");
+
+for (let i = 0; i < dropList.length; i++) {
+    for (let currency_code in country_list) {
+        let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "GNF" ? "selected" : "";
+        let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
+        dropList[i].insertAdjacentHTML("beforeend", optionTag);
+    }
+    dropList[i].addEventListener("change", e => {
+        loadFlag(e.target);
+    });
+}
+// tVXIyovzQYzOTOhqkhYHLY72YXhh7B6x
+function loadFlag(element) {
+    for (let code in country_list) {
+        if (code == element.value) {
+            let imgTag = element.parentElement.querySelector("img");
+            imgTag.src = `https://flagcdn.com/48x36/${country_list[code].toLowerCase()}.png`;
+        }
+    }
+}
+
+window.addEventListener("load", function() {
+    getExchangeRate();
+})
+getButton.addEventListener("click", e => {
+    e.preventDefault();
+    getExchangeRate();
+})
+const amount__input = document.querySelector('.amount__input');
+amount__input.addEventListener("keydown", e => {
+    if (e.keyCode === 13) {
+        getExchangeRate();
+    }
+
+
+})
+
+const exchangeIcon = document.querySelector(".icon");
+exchangeIcon.addEventListener("click", function() {
+    let tempCode = fromCurrency.value;
+    fromCurrency.value = toCurrency.value;
+    toCurrency.value = tempCode;
+    loadFlag(fromCurrency);
+    loadFlag(toCurrency);
+    getExchangeRate();
+})
+
+function getExchangeRate() {
+
+    const exchange__rate = document.querySelector('.exchange-rate');
+    let amountVal = amount__input.value;
+    if (amountVal == "" || amountVal == "0") {
+        amount__input.value = "1";
+        amountVal = 1;
+    }
+    exchange__rate.innerText = "Getting exchange rate...";
+    const key = "89cede30da3b23ffc44ed724";
+    let url = `https://v6.exchangerate-api.com/v6/${key}/latest/${fromCurrency.value}`;
+    fetch(url).then(response => response.json()).then(result => {
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExRate = (amountVal * exchangeRate).toFixed(2);
+        exchange__rate.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
+    }).catch(() => {
+        exchange__rate.innerText = "Something went wrong";
+    });
+}
+</script>
+</body>
+
+</html>

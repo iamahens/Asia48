@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Grocery Website Design Tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="addon.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+ <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Asia48 </a> 
+
+     <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="homepage.html">ABOUT</a>
+        <a href="homepage.html">DISCOVER</a>
+        <a  class="active" href="addon.html">EXPLORE</a>
+        <a href="blog1.html">BLOGS</a>
+    </nav> 
+ 
+ <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form> 
+
+     <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div> 
+
+         <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div> 
+         <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div> 
+
+     <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form> 
+
+</header>  
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Bucket List <span>Adventures</span> for you in Asia</h3>
+        <p>If you are looking for an adventure of a lifetime, then you have come to the right place! Our website is your one-stop-shop for exploring bucket list adventures. Here are some ideas to get you started:</p>
+        <a href="#" class="btn">Explore now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.OyzWOJ-kh0qSnKd0jEA3HgHaDL&pid=Api&P=0" alt="">
+            <h3>Customization</h3>
+            <p>We understand that each traveler has unique needs and preferences, which is why we offer customizable packages that can be tailored to suit your individual requirements.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Lu787yxgw3tLyINWzLQDfwHaFa&pid=Api&P=0" alt="">
+            <h3>Safety</h3>
+            <p>Your safety is our top priority, and we only work with reputable adventure providers who prioritize safety and adhere to the highest industry standards.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.borgenmagazine.com/wp-content/uploads/2014/07/sustainable-development_opt-702x336.jpg" alt="">
+            <h3>Environmental sustainability:</h3>
+            <p>We are committed to promoting responsible and sustainable tourism practices, and we work with adventure providers who share this commitment.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> Adventures <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h3>Outdoor Adventures: </h3>
+            <p>activities such as hiking, camping, rock climbing, mountaineering, kayaking, and rafting.</p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/12727865/pexels-photo-12727865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h3>Cultural Adventures:</h3>
+            <p>experiences such as visiting historical sites, museums, and art galleries, as well as attending cultural events like festivals and concerts.</p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/2744596/pexels-photo-2744596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h3>Wildlife Adventures:</h3>
+            <p>This category can include activities such as safaris, wildlife tours, and birdwatching. </p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://images.pexels.com/photos/2348108/pexels-photo-2348108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h3>Extreme Adventures</h3>
+            <p>This category can include activities such as skydiving, bungee jumping, and white-water rafting. </p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Our <span>Adventureous Tour</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/14928394/pexels-photo-14928394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>Himalayas, <span style="font-size: 20px; font-family: sans-serif;">NEPAL</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair';">HIKING</p>
+                <div class="price"> $550.00- - 3600.00/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/1732281/pexels-photo-1732281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>Mae Taeng River, <span style="font-size: 20px; font-family: sans-serif;">THAILAND</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair';">RAFTING</p>
+                <div class="price"> $45.99/- - 104.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/6473834/pexels-photo-6473834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>Jaisalmer,  <span style="font-size: 20px; font-family: sans-serif;">INDIA</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair';">CAMPING</p>
+                <div class="price"> $24.99/- - 129.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/1543756/pexels-photo-1543756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>Long Dong <span style="font-size: 20px; font-family: sans-serif;">TAIWAN</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair'">ROCK-CLIMBING</p>
+                <div class="price"> $69.99/- - 139.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/1497587/pexels-photo-1497587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3> El Nido, <span style="font-size: 20px; font-family: sans-serif;">PHILIPPINES</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair'">KAYAKING</p>
+                <div class="price"> $11.99/- - 49.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.DlQ-BaYbKxFoU1kxZ1msMgHaE8&pid=Api&P=0" alt="">
+                <h3>MOUNT. FUJI, <span style="font-size: 20px; font-family: sans-serif;">JAPAN</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair'">MOUNTAINEERING</p>
+                <div class="price"> $269.99/- - 539.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/739657/pexels-photo-739657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>Langkawi,  <span style="font-size: 20px; font-family: sans-serif;">MALAYSIA</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair'">SKYDIVING</p>
+                <div class="price"> $239.99/- - 349.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.g-DocF-LSWq-wMYp2ToG0wHaFj&pid=Api&P=0" alt="">
+                <h3>MACAU, <span style="font-size: 20px; font-family: sans-serif;">CHINA</span></h3>
+                <p style="font-size: 20px; font-family: 'playfair'">BUNGEE-JUMPING</p>
+                <div class="price"> $379.99/- - 519.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">CHOOSE YOUR PACKAGE</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+
+<!-- review section starts  -->
+ 
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/10474227/pexels-photo-10474227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/16073738/pexels-photo-16073738.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://images.pexels.com/photos/7910811/pexels-photo-7910811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+<!-- 
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<!-- <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> groco <i class="fas fa-shopping-basket"></i> </h3>
+            <p> Kabirhat-3800,Noakhali,Bangladesh.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +000-000-0000 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +000-000-0000 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> razishah918@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Noakhali,Bangladesh. </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+  </div>
+
+    <div class="credit"> created by <span> MD.RAZI-SHAH </span> | all rights reserved </div>
+
+</section>           <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div> -->
+
+   
+
+<!-- footer section ends -->
+
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+              <div class="col" id="company">
+                  <img src="images/logo.png" alt="" class="logo">
+                  <p>
+                    We are specialized in making your travelling and tour easy .
+                    Pack your bag and explore the diversity and enchanting experience of travelling in asia
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="col" id="services">
+                 <h3>EXPLORES</h3>
+                 <div class="links">
+                    <a href="#">ASIA</a>
+                    <a href="#">HONG KONG</a>
+                    <a href="#">INDONESIA</a>
+                    <a href="#">JAPAN</a>
+                    <a href="#">INDIA</a>
+                 </div>
+              </div>
+
+              <div class="col" id="useful-links">
+                 <h3>LINKS</h3>
+                 <div class="links">
+                    <a href="#">HOME</a>
+                    <a href="#">EXPLORE</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">BLOGS</a>
+                    <a href="#">CONTACT</a>
+                    
+                 </div>
+              </div>
+
+              <div class="col" id="contact">
+                  <h3>CONTACT</h3>
+                  <div class="contact-details">
+                     <i class="fa fa-location"></i>
+                     <p>FF-42, Procube Avenue, <br> NY, USA</p>
+                  </div>
+                  <div class="contact-details">
+                     <i class="fa fa-phone"></i>
+                     <p>+1-8755856858</p>
+                  </div>
+                  <div class="contact-details">
+                    <i class="fa fa-envelope"></i>
+                    <p>nicewebsite@gmail.com</p>
+                 </div>
+              </div>
+        </div>
+
+        <div class="row">
+              <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Email here...">
+                    <button><i class="fa fa-paper-plane"></i></button>
+                </form>
+              </div>
+        </div>
+
+    </div>
+ </footer>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="addon.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style> 
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.china{
+    width: 100%;
+    height: 100vh;
+    background-image: url(INDIA.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0; 
+    }
+
+    /* animation khtm idhrrr for china */
+
+}
+
+.box img{
+    width: 50%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+.box{
+    border-radius: 8px;
+ background-image: url(indiaback.jpg);
+ box-shadow: 10px 10px 10px 10px rgb(138, 138, 73);
+ 
+ color: black;
+ margin-top: 30px;
+ margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box h1, p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+
+/* yha se for the boxeaaaa  */
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-familly : "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 125px;
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: warp;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #d8a6a6;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container .card:hover {
+  height : 320px;    
+}
+
+
+.container .card .image {
+    border-radius: 15px;
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* end of the places 
+faq box */
+
+#accordian{
+   margin: 80px auto;
+    width: 800px;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(85, 3, 3);
+
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    
+}
+
+#accordian label + input[type ="radio"]{
+    display: none;
+
+}
+
+#accordian .answer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type ="radio"]:checked + .answer{
+    max-height: 400px;
+}
+
+
+/*footer*/
+section{
+  text-align:center;
+
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+h4{
+    color: rgb(54, 39, 69);
+    font-size: 70px;
+    padding-left: 25%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+h5{
+
+color: rgb(0, 0, 0);
+font-size: 55px;
+
+align-content: center;
+margin-top: 10px;
+}
+
+
+
+</style>
+<body>
+    <div class="china"> </div>
+    <div class="title"> <h1>INDIA</h1></div>
+
+    <p> <br>
+    </p>
+
+    <div class="box">
+        <h1> A little something about India: </h1> <br>
+        <p>India (Hindi: Bhārat), officially the Republic of India (Hindi: Bhārat Gaṇarājya) and also known as Hindustān or Bhārat within the country, is a country in South Asia. It is the second largest country by number of people and seventh largest country by land area. It also has the most people of any democracy in the world.[11][12] India is a peninsula, bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast. It has six neighbors: Pakistan in the north-west, China, Nepal, and Bhutan in the north, and Bangladesh and Myanmar in the east. Sri Lanka is nearby to the south.
+            <br>India has the fifth largest economy by nominal GDP, the third largest by GDP (PPP) and is the fastest growing major economy. India is a nuclear power and has the second largest standing military in the world. India has its own space agency and has done various research throughout the solar system, including sending spacecraft to the Moon, Mars, and Venus. India is also a member of the G20 developing nations, and has been described as a potential superpower due to its rising economy and increase in global influence.
+            <br>India has the fourth largest number of spoken languages per country in the world, only behind Papua New Guinea, Indonesia, and Nigeria.[18] People of many different religions live there, including the five most popular world religions: Hinduism, Buddhism, Sikhism, Islam, and Christianity. The first three religions originated from the Indian subcontinent along with Jainism.</p>
+       
+    </div> 
+
+    <!-- card section  --> 
+
+    <h4> TOP PICKS FOR YOU </h4>
+    <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src = Tajmahal.png>
+          </div>
+          <div class = content>
+            <h3>TAJ MAHAL</h3>
+            <p>Taj Mahal is essentially a tomb built in the memory of Shah Jahan's wife, Mumtaz Mahal. Taj Mahal is also famous as the symbol of love. It is located in Agra, Uttar Pradeh, near river Yamuna.</p>
+          </div>
+        </div>
+        <div class = card>
+            <div class = image>
+              <img href = "#" src = redfort.jpg>
+            </div>
+            <div class = content>
+              <h3>RED FORT</h3>
+              <p>Red Fort is one of the most beautiful historical monuments of India. Red Fort, was built by the Mughal Emperor Shah Jahan. It is made of red sandstones and was earlier coated with precious jewels.</p>
+            </div>
+          </div> 
+          <div class = card>
+            <div class = image>
+              <img href = "#" src = goldentemple.jpg>
+            </div>
+            <div class = content>
+              <h3>GOLDEN TEMPLE</h3>
+              <p>The Golden temple is famous for its full golden dome, it is one of the most sacred pilgrim spots for Sikhs. It is situated in Amritsar, Punjab. It was designed by Guru Arjan, the fifth Sikh guru.</p>
+            </div>
+          </div>     
+      </div>
+
+<!-- faq box  -->
+<ul id="accordian">  
+  <h5>FAQ </h5> 
+   <li> 
+     <label for="first"> What is so spacial about India?   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="first" checked>
+   <div class="answer"> 
+       <p> India is located in the south of Asia, and is a country full of incredible destinations for you to visit. Whether you want to visit the majestic Taj Mahal, hike through the Indian Himalayas or eat your way through the many types of mouth watering curry; there is something for everyone. </p>
+   </div>
+   </li>
+
+<li>    
+
+   <label for="second"> Fun facts about India.   <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="second" >
+   <div class="answer"> 
+       <p> 1. India currently has the second highest population in the world, with China having the highest.
+        Hinduism is one of the major religions in India, and this is the reason cows are sacred in this country.
+
+         2. Cows are believed to be holy in Hinduism, and so they are protected, honoured and treated with respect. The Hindu Goddess Bhoomi represents Earth and is often shown in the form of a cow.
+        India is a country that has a huge amount of wealth inequality. In 2019, it was estimated that the richest 10% of the Indian population owned around 80.7% of the wealth, and that the top 1% of the population (in regards to wealth) earned 21% of the country’s total income.
+
+        3. 70% of the world’s spices come from India, which is a crazy amount! Some of the most popular species include black pepper, cinnamon, ginger, nutmeg, paprika, turmeric and vanilla.
+        When we think of India; especially as travellers, the first thing that comes to mind is the majestic Taj Mahal! Millions of people visit this incredible site each year.
+        
+        4.This beautiful mausoleum was commissioned by Mughal Emperor Shah Jahan in 1632. His wife had passed away from childbirth, so he had the Taj Mahal commissioned in her memory. It is a UNESCO World Heritage Site and is one of the ‘new 7 wonders of the world’.
+        </p>
+   </div> </li>
+
+  <li><label for="third"> What language is spoken in India? <span> &#x3e;</span>  </label>  
+   <input type="radio" name="accordian" id="third">
+   <div class="answer"> 
+       <p>  Indian dialects of over 19,500 and 121 are recognized as languages since they meet the standard of 10,000 are speakers. Interestingly, only 22 languages as official languages. Hindi is the most spoken language in India and It is also one of the official languages of the country.
+      </p>
+   </div>
+</li>
+
+<li><label for="fourth"> Why you should add India to your bucket list?<span> &#x3e;</span>  </label>  
+  <input type="radio" name="accordian" id="fourth">
+  <div class="answer"> 
+      <p>India’s annual program of festival right across the country is so richly deserve it is a tough choice when it come deciding which you should visit!  The beauty of it is, it’s so electric that typical “Indian” food probably doesn’t exist! You’ll find the plates and plates vary just as much as everything else in this country, and no two region’s creation will be alike 
+     </p>
+  </div>
+</li>
+</ul>
+
+<!-- footer -->
+  <section>
+    <h1>THANK YOU</h1>
+
+  </section>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+         <h3>Adios</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+    
+</body>
+</html>
