@@ -1,49 +1,175 @@
+# Study Center - AI Quiz Generator
 
-https://iamahens.github.io/Asia48/
+A modern, AI-powered quiz generation application using Google's Gemini API. Transform your study materials into interactive quizzes with multiple question types and difficulty levels.
 
+## 🚀 Features
 
-Asia 48 - Your Ultimate Travel Guide to Asia's Hidden Gems
-Asia 48 Logo
+- **AI-Powered Generation**: Uses Google Gemini API to create intelligent quizzes
+- **Multiple Question Types**: Multiple choice, True/False, Short answer, Essay, and Mixed types
+- **Difficulty Levels**: Easy, Medium, and Hard difficulty settings
+- **Modern UI**: Clean, responsive design with smooth animations
+- **File Upload**: Upload text files directly as study material
+- **Quiz Management**: Save, view, and delete generated quizzes
+- **Real-time Feedback**: Instant error handling and loading states
 
-Introduction
-Welcome to Asia 48, your go-to resource for exploring the uncharted territories of Asia. This comprehensive travel guide is dedicated to uncovering the hidden treasures of the least-visited countries in Asia, helping adventurers, wanderers, and explorers embark on extraordinary journeys.
+## 🛠️ Setup Instructions
 
-Features
-1. Extensive Country Profiles
-Discover in-depth information about 48 unique Asian countries, including lesser-known gems often overlooked by conventional tourism.
-2. Detailed Travel Itineraries
-Plan your next adventure with meticulously crafted itineraries, each tailored to provide you with a unique and unforgettable experience.
-3. Community Forum
-Connect with like-minded travelers through our interactive forum. Share your insights, experiences, and tips, or seek advice from fellow adventurers who have ventured off the beaten path.
-4. Local Insights
-Gain access to local insights and hidden gems from those who call these unique countries home. Learn about their culture, cuisine, and traditions directly from the source.
-5. Travel Tips and Recommendations
-Get expert recommendations on accommodations, transportation, and must-visit attractions in these off-the-radar destinations.
-6. User-Generated Content
-Share your own travel stories, photos, and tips to contribute to a growing community of explorers passionate about offbeat Asian destinations.
-Getting Started
-To get started with Asia 48, simply follow these steps:
+### 1. Install Dependencies
 
-Explore the Countries: Browse through our extensive list of 48 Asian countries to find your next adventure destination.
+```bash
+npm install
+```
 
-Plan Your Trip: Create a custom travel itinerary based on your interests and preferences.
+### 2. Get Your Gemini API Key
 
-Join the Community: Engage with fellow travelers on our community forum to exchange ideas and advice.
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy the generated API key
 
-Contribute: Share your own travel experiences, photos, and recommendations to enrich our collective knowledge of these hidden gems.
+### 3. Create index.html (if not exists)
 
-How to Contribute
-We encourage contributions from travelers who have explored the hidden treasures of Asia. If you have valuable insights, travel stories, or local recommendations to share, please consider contributing to Asia 48. You can do this by:
+Create an `index.html` file in the root directory:
 
-Adding content to country profiles.
-Sharing your travel itineraries and tips.
-Participating in forum discussions.
-Uploading photos and travel stories.
-Get Started
-Dive into the world of uncharted Asian adventures with Asia 48. We believe in the power of exploration, and together, we can help uncover the best-kept secrets of this remarkable continent. Join our community and let's embark on a journey like no other.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Center - AI Quiz Generator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
 
-Visit our website to start exploring the hidden gems of Asia today!
+### 4. Run the Application
 
-Follow us on Facebook and Instagram for daily inspiration and updates.
+```bash
+npm run dev
+```
 
-Happy exploring! 🌍🌟
+The app will open at `http://localhost:3000`
+
+## 📖 How to Use
+
+### 1. Enter API Key
+- Click "Generate Quiz with AI"
+- Enter your Gemini API key in the dialog
+- The key is stored temporarily in your browser session
+
+### 2. Add Study Material
+- Paste your study content in the text area, or
+- Upload a text file using the "Upload File" button
+
+### 3. Configure Quiz Settings
+- **Number of Questions**: Use the slider (1-20 questions)
+- **Question Type**: Choose from multiple formats
+- **Difficulty Level**: Select Easy, Medium, or Hard
+
+### 4. Generate Quiz
+- Click "Generate Quiz with AI"
+- Wait for the AI to process your material
+- Review the generated questions and answers
+
+### 5. Save and Manage
+- Click "Save Quiz" to store generated quizzes
+- View saved quizzes in the sidebar
+- Delete unwanted quizzes with the trash icon
+
+## 🔧 Technical Details
+
+### Key Improvements Made
+
+#### API Integration
+- **Real Gemini API calls** instead of mock data
+- Structured prompts for consistent quiz generation
+- Robust response parsing and error handling
+- Support for different question types and difficulties
+
+#### UI/UX Enhancements
+- Modern, clean design replacing the pixelated style
+- Responsive layout that works on all devices
+- Smooth animations and loading states
+- Clear visual hierarchy and typography
+- Better color scheme and spacing
+
+#### New Features
+- Difficulty level selection
+- Enhanced question types
+- Question explanations
+- Creation timestamps
+- Better file upload handling
+- Comprehensive error messages
+
+### Dependencies
+
+- **React 18**: Modern React with hooks
+- **Lucide React**: Beautiful, consistent icons
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vite**: Fast development server and build tool
+
+## 🌟 Usage Tips
+
+1. **Study Material Quality**: Provide clear, well-structured content for better quiz questions
+2. **Question Types**: 
+   - Multiple Choice: Best for factual recall
+   - True/False: Good for concept verification
+   - Short Answer: Tests understanding
+   - Essay: Evaluates comprehensive knowledge
+3. **Difficulty Levels**:
+   - Easy: Basic recall and recognition
+   - Medium: Application and analysis
+   - Hard: Synthesis and evaluation
+
+## 🔒 Privacy & Security
+
+- API keys are stored only in browser session storage
+- No study materials are stored permanently
+- All data processing happens in your browser
+- Gemini API calls are made directly from your browser
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **"Invalid API Key" Error**
+   - Verify your API key is correct
+   - Check if you have credits remaining in Google AI Studio
+   - Ensure the API key has proper permissions
+
+2. **"Failed to Parse Response" Error**
+   - Try simplifying your study material
+   - Reduce the number of questions
+   - Check your internet connection
+
+3. **UI Not Loading Properly**
+   - Clear browser cache
+   - Ensure all dependencies are installed
+   - Check console for JavaScript errors
+
+## 📱 Browser Compatibility
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## 🚀 Future Enhancements
+
+- [ ] Quiz taking mode with scoring
+- [ ] Export quizzes to PDF
+- [ ] Collaborative quiz sharing
+- [ ] Analytics and progress tracking
+- [ ] Integration with learning management systems
+
+## 📄 License
+
+MIT License - feel free to use and modify as needed.
+
+---
+
+**Happy Studying! �**
