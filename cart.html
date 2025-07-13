@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Asia 48</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="as.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo1.png" class="logo" alt=""></a>
+        <div> 
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loginform.html">Discover</a></li>
+                <li><a href="addon.html">Explore</a></li>
+                <li><a href="blog1.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="pageheader" class="aboutheader">
+        <h2>#Travel_Cart</h2>
+        <p>Your selected travel destinations and packages</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <div class="cart-container">
+            <h2>Your Travel Cart</h2>
+            <div class="cart-content">
+                <div class="cart-item">
+                    <img src="images/bhutan.jpg" alt="Bhutan Package">
+                    <div class="item-details">
+                        <h3>Bhutan Adventure Package</h3>
+                        <p>7 days / 6 nights</p>
+                        <p>Includes: Accommodation, Meals, Tours</p>
+                        <span class="price">$1,299</span>
+                    </div>
+                    <div class="quantity">
+                        <button class="qty-btn">-</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="images/MONGOLIA.jpg" alt="Mongolia Package">
+                    <div class="item-details">
+                        <h3>Mongolia Nomadic Experience</h3>
+                        <p>10 days / 9 nights</p>
+                        <p>Includes: Accommodation, Meals, Tours</p>
+                        <span class="price">$1,799</span>
+                    </div>
+                    <div class="quantity">
+                        <button class="qty-btn">-</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Cart Summary</h3>
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span>$3,098</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Tax:</span>
+                        <span>$309</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span>$3,407</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .cart-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .cart-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .cart-item {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 20px;
+        }
+        
+        .cart-item img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .item-details {
+            flex: 1;
+        }
+        
+        .item-details h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .item-details p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .qty-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .qty {
+            font-weight: bold;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .remove-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .cart-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .summary-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .summary-line.total {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+        }
+        
+        .checkout-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .checkout-btn:hover {
+            background: #218838;
+        }
+    </style>
+
+    <script>
+        // Add some basic cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const qtyButtons = document.querySelectorAll('.qty-btn');
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            
+            qtyButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const qtySpan = this.parentNode.querySelector('.qty');
+                    let qty = parseInt(qtySpan.textContent);
+                    
+                    if (this.textContent === '+') {
+                        qty++;
+                    } else if (this.textContent === '-' && qty > 1) {
+                        qty--;
+                    }
+                    
+                    qtySpan.textContent = qty;
+                    updateCartTotal();
+                });
+            });
+            
+            removeButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.parentNode.remove();
+                    updateCartTotal();
+                });
+            });
+            
+            function updateCartTotal() {
+                // Basic total calculation - in a real app this would be more sophisticated
+                console.log('Cart total updated');
+            }
+        });
+    </script>
+</body>
+</html>
